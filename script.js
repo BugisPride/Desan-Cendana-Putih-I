@@ -16,10 +16,14 @@ function changeSlide(){
 setInterval(changeSlide, 5000);
 
 // ===== LINK CSV DARI GOOGLE SHEETS =====
-const linkBerita = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRH3PnsnoKbL2QhS0VjlqQ3TabXsrur0vSOV_e9GgSQ7pK-GX3MU0IuPXwN9YtGmEQFXQ5WxXnknUA7/pub?gid=0&single=true&output=csv";
-const linkPengumuman = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRH3PnsnoKbL2QhS0VjlqQ3TabXsrur0vSOV_e9GgSQ7pK-GX3MU0IuPXwN9YtGmEQFXQ5WxXnknUA7/pub?gid=1068159839&single=true&output=csv";
-const linkPerangkat = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRH3PnsnoKbL2QhS0VjlqQ3TabXsrur0vSOV_e9GgSQ7pK-GX3MU0IuPXwN9YtGmEQFXQ5WxXnknUA7/pub?gid=970249305&single=true&output=csv";
-const linkStatistik = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRH3PnsnoKbL2QhS0VjlqQ3TabXsrur0vSOV_e9GgSQ7pK-GX3MU0IuPXwN9YtGmEQFXQ5WxXnknUA7/pub?gid=30406925&single=true&output=csv";
+const linkBerita = "https://docs.google.com/spreadsheets/d/e/2PACX-1vShGDbOF5ywiCMpMbWyOlcLcgxD6kQfLbpLBCjBnPu4SbXMwISN3dxz11kig5799jTtqnyhrsKW-_y6/pub?gid=0&single=true&output=csv";
+
+const linkPengumuman = "https://docs.google.com/spreadsheets/d/e/2PACX-1vShGDbOF5ywiCMpMbWyOlcLcgxD6kQfLbpLBCjBnPu4SbXMwISN3dxz11kig5799jTtqnyhrsKW-_y6/pub?gid=401555542&single=true&output=csv";
+
+const linkPerangkat = "https://docs.google.com/spreadsheets/d/e/2PACX-1vShGDbOF5ywiCMpMbWyOlcLcgxD6kQfLbpLBCjBnPu4SbXMwISN3dxz11kig5799jTtqnyhrsKW-_y6/pub?gid=657853708&single=true&output=csv";
+
+const linkStatistik = "https://docs.google.com/spreadsheets/d/e/2PACX-1vShGDbOF5ywiCMpMbWyOlcLcgxD6kQfLbpLBCjBnPu4SbXMwISN3dxz11kig5799jTtqnyhrsKW-_y6/pub?gid=1605019873&single=true&output=csv";
+
 
 async function fetchCSV(url){
   const res = await fetch(url);
@@ -90,3 +94,4 @@ window.addEventListener("scroll", () => {
   document.querySelector(".navbar")
     .classList.toggle("scrolled", window.scrollY > 50);
 });
+
