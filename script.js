@@ -15,7 +15,7 @@ function changeSlide(){
 }
 setInterval(changeSlide, 5000);
 
-// ===== LINK CSV DARI GOOGLE SHEETS =====
+// ===== LINK CSV DARI GOOGLE SHEETS (YANG BARU) =====
 const linkBerita = "https://docs.google.com/spreadsheets/d/e/2PACX-1vShGDbOF5ywiCMpMbWyOlcLcgxD6kQfLbpLBCjBnPu4SbXMwISN3dxz11kig5799jTtqnyhrsKW-_y6/pub?gid=0&single=true&output=csv";
 
 const linkPengumuman = "https://docs.google.com/spreadsheets/d/e/2PACX-1vShGDbOF5ywiCMpMbWyOlcLcgxD6kQfLbpLBCjBnPu4SbXMwISN3dxz11kig5799jTtqnyhrsKW-_y6/pub?gid=401555542&single=true&output=csv";
@@ -23,7 +23,6 @@ const linkPengumuman = "https://docs.google.com/spreadsheets/d/e/2PACX-1vShGDbOF
 const linkPerangkat = "https://docs.google.com/spreadsheets/d/e/2PACX-1vShGDbOF5ywiCMpMbWyOlcLcgxD6kQfLbpLBCjBnPu4SbXMwISN3dxz11kig5799jTtqnyhrsKW-_y6/pub?gid=657853708&single=true&output=csv";
 
 const linkStatistik = "https://docs.google.com/spreadsheets/d/e/2PACX-1vShGDbOF5ywiCMpMbWyOlcLcgxD6kQfLbpLBCjBnPu4SbXMwISN3dxz11kig5799jTtqnyhrsKW-_y6/pub?gid=1605019873&single=true&output=csv";
-
 
 async function fetchCSV(url){
   const res = await fetch(url);
@@ -94,4 +93,3 @@ window.addEventListener("scroll", () => {
   document.querySelector(".navbar")
     .classList.toggle("scrolled", window.scrollY > 50);
 });
-
