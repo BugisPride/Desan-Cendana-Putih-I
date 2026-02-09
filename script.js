@@ -88,8 +88,35 @@ loadPengumuman();
 loadPerangkat();
 loadStatistik();
 
+
+// AUTO CLOSE MENU SAAT LINK DIKLIK (MOBILE)
+const menuLinks = document.querySelectorAll("#menu a");
+
+menuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {
+      menu.style.display = "none";
+    }
+  });
+});
+
+
+// AUTO CLOSE MENU SAAT KLIK DI LUAR (MOBILE)
+document.addEventListener("click", (e) => {
+  if (
+    window.innerWidth <= 768 &&
+    menu.style.display === "flex" &&
+    !menu.contains(e.target) &&
+    !toggle.contains(e.target)
+  ) {
+    menu.style.display = "none";
+  }
+});
+
+
 // NAVBAR SHRINK ON SCROLL
 window.addEventListener("scroll", () => {
   document.querySelector(".navbar")
     .classList.toggle("scrolled", window.scrollY > 50);
 });
+
